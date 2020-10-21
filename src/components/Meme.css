@@ -1,0 +1,22 @@
+img {
+    width:256px;
+    height:256px;
+    transition:0.5s ease;
+}
+
+.shown {
+    opacity:0;
+    position: relative;
+    top: 0px;
+    left:-100px;
+}
+
+.container :hover img {
+    opacity: 0.4;
+    border: 2px solid gray;
+}
+
+.container :hover .shown{
+    border: 1px gray;
+    opacity: 1;
+}
